@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="503.0" prefWidth="697.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Reception">
+    <children>
+        <AnchorPane layoutX="26.0" layoutY="11.0" prefHeight="471.0" prefWidth="605.0">
+            <children>
+                <Button fx:id="custInfo" layoutX="23.0" layoutY="196.0" mnemonicParsing="false" onAction="#fucncustInfo" prefHeight="25.0" prefWidth="126.0" text="Customer Info" />
+                <Button fx:id="managerInfo" layoutX="23.0" layoutY="236.0" mnemonicParsing="false" onAction="#funcmanagerInfo" prefHeight="25.0" prefWidth="126.0" text="Manager Info" />
+                <Button fx:id="checkOut" layoutX="23.0" layoutY="277.0" mnemonicParsing="false" onAction="#funcCheckOut" prefHeight="25.0" prefWidth="126.0" text="Check Out" />
+                <Button fx:id="upCheckStatus" layoutX="23.0" layoutY="318.0" mnemonicParsing="false" onAction="#funcupCheckStatus" prefHeight="25.0" prefWidth="126.0" text="Update Check Status" />
+                <Button fx:id="upRoomStatus" layoutX="23.0" layoutY="358.0" mnemonicParsing="false" onAction="#funcupRoomStatus" text="Update Room Status" />
+                <Button fx:id="logOut" layoutX="22.0" layoutY="397.0" mnemonicParsing="false" onAction="#funcLogOut" prefHeight="25.0" prefWidth="126.0" text="Log Out" />
+                <Button fx:id="empInfo" layoutX="23.0" layoutY="155.0" mnemonicParsing="false" onAction="#funcempInfo" prefHeight="25.0" prefWidth="126.0" text="All Employee Info" />
+                <Button fx:id="dept" layoutX="22.0" layoutY="112.0" mnemonicParsing="false" onAction="#funcDept" prefHeight="25.0" prefWidth="126.0" text="Department" />
+                <Button fx:id="room" layoutX="23.0" layoutY="74.0" mnemonicParsing="false" onAction="#funcRoom" prefHeight="25.0" prefWidth="126.0" text="Room" />
+                <Button fx:id="newCustomer" layoutX="23.0" layoutY="35.0" mnemonicParsing="false" onAction="#addNewCustomer" prefHeight="25.0" prefWidth="126.0" text="Add new customer" />
+            <ImageView fitHeight="385.0" fitWidth="400.0" layoutX="172.0" layoutY="36.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@picture/fourth.jpg" />
+               </image>
+            </ImageView>
+            <Button fx:id="backBTN" layoutX="283.0" layoutY="432.0" mnemonicParsing="false" onAction="#backAction" prefHeight="25.0" prefWidth="107.0" text="Back " />
+            </children>
+        </AnchorPane>
+    </children>
+</AnchorPane>
