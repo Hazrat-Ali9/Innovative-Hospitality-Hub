@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="348.0" prefWidth="583.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.NotificationFormController">
+   <children>
+      <ImageView fitHeight="275.0" fitWidth="410.0" layoutX="21.0" layoutY="30.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@pic/img.png" />
+         </image>
+      </ImageView>
+      <Button layoutX="429.0" layoutY="70.0" mnemonicParsing="false" onAction="#btnNotifcationOnAction" prefHeight="40.0" prefWidth="138.0" text="Notification">
+         <font>
+            <Font name="Bell MT" size="18.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+   </children>
+</AnchorPane>

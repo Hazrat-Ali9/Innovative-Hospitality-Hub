@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="550.0" prefWidth="700.0" style="-fx-background-color: #a4a4a4;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.customerController">
+   <children>
+      <Label layoutX="155.0" layoutY="108.0" prefHeight="32.0" prefWidth="161.0" text="Verification Method:" textFill="#171717">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="236.0" layoutY="148.0" text="Number:">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="nameId" layoutX="253.0" layoutY="182.0" prefHeight="21.0" prefWidth="93.0" text="Name:">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="238.0" layoutY="259.0" prefHeight="21.0" prefWidth="59.0" text="Gender:">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="233.0" layoutY="309.0" prefHeight="21.0" prefWidth="73.0" text="Country:">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="114.0" layoutY="354.0" text="Allocated Room Number:">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="254.0" layoutY="385.0" prefHeight="21.0" prefWidth="53.0" text="Days:">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="232.0" layoutY="419.0" text="Deposit:">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="methodBox" layoutX="346.0" layoutY="108.0" onAction="#methodAction" prefHeight="25.0" prefWidth="202.0" />
+      <TextField fx:id="numberText" layoutX="347.0" layoutY="146.0" prefHeight="25.0" prefWidth="202.0" />
+      <TextField fx:id="custName" layoutX="347.0" layoutY="180.0" prefHeight="25.0" prefWidth="202.0" />
+      <TextField fx:id="custCountry" layoutX="347.0" layoutY="307.0" prefHeight="25.0" prefWidth="202.0" />
+      <TextField fx:id="custCheckedIn" layoutX="346.0" layoutY="383.0" prefHeight="25.0" prefWidth="202.0" />
+      <RadioButton fx:id="male" layoutX="359.0" layoutY="260.0" mnemonicParsing="false" text="Male">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="female" layoutX="469.0" layoutY="260.0" mnemonicParsing="false" text="Female">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </RadioButton>
+      <Button fx:id="addBTN" layoutX="347.0" layoutY="459.0" mnemonicParsing="false" onAction="#addAction" prefHeight="25.0" prefWidth="100.0" text="Add">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="backBTN" layoutX="463.0" layoutY="459.0" mnemonicParsing="false" onAction="#backAction" prefHeight="25.0" prefWidth="84.0" text="Back">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Label fx:id="showlabel" layoutX="469.0" layoutY="493.0" prefHeight="32.0" prefWidth="190.0" textFill="#119024">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="roomCombo" layoutX="347.0" layoutY="344.0" onAction="#RoomComboAction" prefHeight="25.0" prefWidth="202.0" />
+      <Label fx:id="showlabel1" layoutX="486.0" layoutY="493.0" prefHeight="43.0" prefWidth="190.0" textFill="#d00808">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="256.0" layoutY="219.0" prefHeight="21.0" prefWidth="53.0" text="Email:">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="custEmail" layoutX="346.0" layoutY="217.0" prefHeight="25.0" prefWidth="202.0" />
+      <TextField fx:id="custDeposit" layoutX="347.0" layoutY="417.0" prefHeight="25.0" prefWidth="202.0" />
+      <Label layoutX="234.0" layoutY="28.0" text="Room Booking Form">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="500.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.CustRoomBookControll">
+   <children>
+      <Label layoutX="48.0" layoutY="57.0" prefHeight="33.0" prefWidth="75.0" text="Name:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="48.0" layoutY="90.0" prefHeight="33.0" prefWidth="75.0" text="Email:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="48.0" layoutY="123.0" prefHeight="33.0" prefWidth="116.0" text="Id Number:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="48.0" layoutY="156.0" prefHeight="33.0" prefWidth="130.0" text="Deposite: ">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="nameBox" layoutX="146.0" layoutY="61.0" prefHeight="25.0" prefWidth="311.0" />
+      <TextField fx:id="emailBox" layoutX="146.0" layoutY="94.0" prefHeight="25.0" prefWidth="311.0" />
+      <TextField fx:id="idBox" layoutX="145.0" layoutY="127.0" prefHeight="25.0" prefWidth="311.0" />
+      <TextField fx:id="depositeBox" layoutX="145.0" layoutY="160.0" prefHeight="25.0" prefWidth="311.0" />
+      <TextArea fx:id="confirmArea" layoutX="145.0" layoutY="234.0" prefHeight="96.0" prefWidth="311.0" />
+      <Button layoutX="152.0" layoutY="349.0" mnemonicParsing="false" onAction="#sendBTN" text="send">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Button layoutX="216.0" layoutY="349.0" mnemonicParsing="false" onAction="#cnlBTN" text="Cancel">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Label layoutX="47.0" layoutY="188.0" prefHeight="25.0" prefWidth="75.0" text="Days">
+         <font>
+            <Font size="15.0" />
+         </font></Label>
+      <TextField fx:id="dayBox" layoutX="146.0" layoutY="188.0" />
+   </children>
+</AnchorPane>

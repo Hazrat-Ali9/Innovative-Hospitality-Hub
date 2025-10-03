@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="729.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.CustomerInfo">
+   <children>
+      <AnchorPane layoutX="7.0" layoutY="7.0" prefHeight="383.0" prefWidth="714.0">
+         <children>
+            <TableView fx:id="custInfo" layoutX="29.0" layoutY="14.0" prefHeight="296.0" prefWidth="671.0">
+              <columns>
+                <TableColumn fx:id="colID" prefWidth="46.0" text="ID" />
+                <TableColumn fx:id="colNumber" prefWidth="81.0" text="Number" />
+                  <TableColumn fx:id="colName" prefWidth="92.0" text="Name" />
+                  <TableColumn fx:id="colGender" prefWidth="81.0" text="Gender" />
+                  <TableColumn fx:id="colCountry" prefWidth="117.0" text="Country" />
+                  <TableColumn fx:id="colRoom" prefWidth="54.0" text="Room" />
+                  <TableColumn fx:id="colStatus" prefWidth="103.0" text="Check in Status" />
+                  <TableColumn fx:id="colDeposit" prefWidth="95.0" text="Deposit" />
+              </columns>
+            </TableView>
+            <Button fx:id="load" layoutX="245.0" layoutY="337.0" mnemonicParsing="false" onAction="#funcLoadData" text="Load Data">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+            <Button fx:id="back" layoutX="346.0" layoutY="337.0" mnemonicParsing="false" onAction="#funcBack" text="Back">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

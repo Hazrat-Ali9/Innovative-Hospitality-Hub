@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="724.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.RoomInfo">
+   <children>
+      <AnchorPane layoutX="5.0" layoutY="6.0" prefHeight="389.0" prefWidth="847.0">
+         <children>
+            <TableView fx:id="roomInfo" layoutX="12.0" layoutY="14.0" prefHeight="277.0" prefWidth="437.0">
+              <columns>
+                <TableColumn fx:id="colroomNumber" prefWidth="96.0" text="Room Number" />
+                <TableColumn fx:id="colavailability" prefWidth="75.0" text="Availability" />
+                  <TableColumn fx:id="colcleanStatus" prefWidth="101.0" text="Clean Status" />
+                  <TableColumn fx:id="colprice" prefWidth="75.0" text="Price" />
+                  <TableColumn fx:id="colbedType" prefWidth="88.0" text="Bed Type" />
+              </columns>
+            </TableView>
+            <Button fx:id="loadData" layoutX="193.0" layoutY="315.0" mnemonicParsing="false" onAction="#funcLoadData" text="Load Data">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+            <Button fx:id="back" layoutX="338.0" layoutY="315.0" mnemonicParsing="false" onAction="#funcBack" text="Back">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="277.0" fitWidth="364.0" layoutX="458.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@picture/high-end-room.jpeg" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
